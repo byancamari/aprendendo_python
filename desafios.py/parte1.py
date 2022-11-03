@@ -61,3 +61,4 @@ print (dias, 'tem', horas, 'horas,', minutos,'minutos e ', segundos,'segundos')
 peso= int(input('Adicione o peso em quilogramas'))
 libras = peso*2204
 print(peso,'quilogramas', 'é igual a', libras, 'libras')
+#teste
