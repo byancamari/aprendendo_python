@@ -10,7 +10,7 @@ Sur_name= input('Digite seu sobrenome')
 
 #003 Write code that will display the joke “What do you call a bear with n teeth?” and on the next line display the answer “A gummy bear!” Try to create it using only one line of code.
 #003 Escreva um código que exibirá a piada “O que você chama de urso sem dentes?" e na próxima linha exiba a resposta “Um ursinho de goma!” Tente criá-lo usando apenas uma linha de código.
-print('O que você chama de urso sem dentes?\Um ursinho de goma!')
+print('O que você chama de urso sem dentes?\nUm ursinho de goma!')
 
 #004 Ask the user to enter two numbers. Add them together and display the answer as The total is [answer]. 
 #004 Peça ao usuário para entrar dois números. Adicionar eles juntos e exibir a resposta como O total é [responda].
@@ -18,7 +18,7 @@ number_one=int(input('Digite um número'))
 number_two= int(input( 'Digite outro número'))
 resultado = number_one + number_two
 print(resultado)
-
+#teste
 #005 Ask the user to enter three numbers. Add together the first two numbers and then multiply this total by the third. Display the answer as The answer is [answer]
 #005 Peça ao usuário para inserir três números. Junte o primeiro dois números e depois multiplique este total pelo terceiro. Exibem o responda como A resposta é [responda]
 number_one=int(input('Digite o primeiro número'))
@@ -61,5 +61,12 @@ print (dias, 'tem', horas, 'horas,', minutos,'minutos e ', segundos,'segundos')
 peso= int(input('Adicione o peso em quilogramas'))
 libras = peso*2204
 print(peso,'quilogramas', 'é igual a', libras, 'libras')
-# teste
-# teste 2
+
+#011 Task the user to enter a number over 100 and then enter a number under 10 and tell them how many times the smaller number goes into the larger number in a user-friendly format. 
+
+number_1 = int(input('Insira um número  maior que 100: '))
+number_2 = int(input('Insira um número  abaixo de 10: '))
+div= number_1 // number_2
+print ("dentro do numero", number_1,"cabem", div, "vezes esse valor" )
+
+#teste
