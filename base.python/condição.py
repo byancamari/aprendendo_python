@@ -50,4 +50,34 @@ if idade >=16 and peso>=50 and sono>=6:
   print("Você pode doar sangue! ")
 else:
     print("Você não pode ser um doador!")
+    #match case
+    meses = int(input('Digite um número e saiba a qual mês do ano ele corresponde: '))
+match meses:
+    case 1:
+        print('Janeiro')
+        case 2:
+        print('Fevereiro')
+    case 3:
+        print('Março')
+    case 4:
+        print('Abril')
+    case 5:
+        print('Maio')
+    case 6: 
+        print('Junho')
+    case 7: 
+        print('Julho')
+    case 8:
+        print('Agosto')
+    case 9:
+        print('Setembro')
+    case 10:
+        print('Outubro')
+    case 11:
+        print('Novembro')
+    case 12: 
+        print('Dezembro')
+    case _:
+        print('Esse mês não existe')
+#@byancamari    
     
