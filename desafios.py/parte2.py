@@ -1,7 +1,5 @@
 #teste
 
-#teste
-
 class Teste:
     def __init__(self, teste):
         self.teste = teste
