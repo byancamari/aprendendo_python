@@ -67,7 +67,7 @@ elif idade ==17:
 elif  idade ==16:
     print('Você pode comprar um bilhete na loteria')
 else:
-    print('Você pode ir no parque ')
+    print('Doces ou travessuras?')
 
 #018 Ask the user to enter 1, 2 or 3. If they enter a 1, display the message “Thank you”, if they enter a 2, display “Well done”, if they enter a 3, display “Correct”. If they enter anything else, display “Error message”.
 #018 Peça ao usuário para inserir 1, 2 ou 3. Se eles inserirem um 1, exibir a mensagem "Obrigado", se eles digitarem um 2, exibir "Bem feito", se eles digitarem um 3, exiba "Correto". Se eles inserem qualquer outra coisa, exibir "Mensagem de erro".
