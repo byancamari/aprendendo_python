@@ -96,9 +96,49 @@ caracteres = len(name)
 print(name, caracteres)
 
 #021 Ask the user to enter their first name and surname in lower case. Change the case to title case and join them together. Display the finished result.
-#022 Peça ao usuário para inserir seu nome e sobrenome em parte e junte-as. Altere o caso para maiúsculas e minúsculas. Exiba o resultado finalizado.
+#021 Peça ao usuário para inserir seu nome e sobrenome em parte e junte-as. Altere o caso para maiúsculas e minúsculas. Exiba o resultado finalizado.
 name1 = input('Insira seu primeiro nome: ')
 name2 = input('Insira seu segundo nome: ')
 name1 = name1.title()
 name2 = name2.title()
 print( name1, name2)
+
+#022 Ask the user to type in the first line of a nursery rhyme and display the length of the string. Ask for a starting number and an ending number and then display just that section of the text (remember Python starts counting from 0 and not 1). 
+#022 Peça ao usuário para digitar o primeiro linha de uma rima de berçário e exibir o comprimento da cadeia de caracteres. Peça um número inicial e um número final e, em seguida, exibir apenas essa seção do texto (lembre-se Python começa contando de 0 e não 1). 
+rima = input('Insira a rima: ')
+comprimento = len(rima)
+print ('Essa rima tem', comprimento,'letras')
+inicio =int(input('Insira um número inicial: ')) 
+fim = int(input('Insira um número final: '))
+parte = (rima [inicio:fim])
+print(parte)
+
+#023 Ask the user to type in any word and display it in upper case. 
+#023 Peça ao usuário para digitar qualquer palavra e exibi-la em letra maiúscula.
+palavra = input('Digite uma palvra: ')
+palavra = palavra.upper()
+
+#024  Ask the user to enter their first name. If the length of their first name is under five characters, ask them to enter their surname and join them together (without a space) and display the name in upper case. If the length of the first name is fiveor more characters, display their first name in lower case.
+#024 Peça ao usuário para inserir seu primeiro nome. Se o comprimento de seu primeiro nome é inferior a cinco caracteres, pergunte eles para digitar seu sobrenome e se juntar a eles juntos (sem espaço) e exibir o nome em maiúsculas. Se o comprimento do primeiro nome for cinco ou mais caracteres, exibir seu primeiro nome em minúsculas.
+first_name = input('Insira seu primeiro nome: ')
+if len(first_name)< 5:
+    last_name = input('Insira seu segundo nome: ')
+    name = first_name + " " + last_name
+    print(name.upper())
+else:
+    print(first_name.lower())
+
+#025 Pig Latin takes the first consonant of a word, moves it to the end of the word and adds on an “ay”. If a word begins with a vowel you just add “way” to the end. For example, pig becomes igpay, banana becomes ananabay, and aadvark becomes aadvarkway. Create a program that will ask the user to enter a word and change it into Pig Latin. Make sure the new word is displayed in lower case.
+#025 O latim porco toma a primeira consoante de uma palavra, move-o para o final da palavra e adiciona um "ay". Se uma palavra começa com uma vogal, basta adicionar "caminho" para o fim. Por exemplo, porco torna-se igpay, banana torna-se ananabay, e aadvark torna-se aadvarkway. Crie um programa que solicitará o usuário para inserir uma palavra e alterá-la para Pig Latin. Verifique se a nova palavra é exibida em minúsculas.
+palavra = input ('Insira uma palavra: ')
+primeira = palavra[0]
+comprimento = len(palavra)
+rest = palavra [1:comprimento]
+if primeira != 'a' and primeira != 'e' and primeira != 'i' and primeira != 'u':
+    nova_palavra = rest + primeira + "ay"
+    print(nova_palavra.lower())
+
+
+
+
+
