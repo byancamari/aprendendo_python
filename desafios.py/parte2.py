@@ -81,4 +81,24 @@ elif number ==3:
 else:
     print('Mensagem de erro')
 
-# @byancamari
+#019 Ask the user to enter their first name and then display the length of their name.
+#019 Peça ao usuário para inserir seu primeiro nome e em seguida, exiba o comprimento do seu nome
+name = input('Insira seu nome: ')
+cacteres = len(name)
+print(cacteres)
+
+#020 Ask the user to enter their first name and then ask them to enter their surname. Join them together with a space between and display the name and the length of whole name.
+#021 Peça ao usuário para inserir seu primeiro nome e, em seguida, peça-lhe para digite seu sobrenome. Junte-os com um espaço entre e exibir o nome e o comprimento do nome inteiro.
+first_name = input('Insira seu primeiro nome: ')
+last_name  = input('Insira seu sobrenome: ')
+name = first_name +"" + last_name 
+caracteres = len(name)
+print(name, caracteres)
+
+#021 Ask the user to enter their first name and surname in lower case. Change the case to title case and join them together. Display the finished result.
+#022 Peça ao usuário para inserir seu nome e sobrenome em parte e junte-as. Altere o caso para maiúsculas e minúsculas. Exiba o resultado finalizado.
+name1 = input('Insira seu primeiro nome: ')
+name2 = input('Insira seu segundo nome: ')
+name1 = name1.title()
+name2 = name2.title()
+print( name1, name2)
